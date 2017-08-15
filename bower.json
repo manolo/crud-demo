@@ -1,0 +1,18 @@
+{
+  "name": "crud-demo",
+  "description": "CRUD DEMO",
+  "main": "index.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0",
+    "vaadin-text-field": "master",
+    "vaadin-grid": "^3.0.1",
+    "vaadin-combo-box": "^2.0.0",
+    "vaadin-button": "^1.0.0",
+    "crud-view": "manolo/crud-view",
+    "vaadin-form-layout": "^1.0.0"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  }
+}
