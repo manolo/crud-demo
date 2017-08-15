@@ -6,13 +6,18 @@
     "polymer": "Polymer/polymer#^2.0.0",
     "vaadin-text-field": "master",
     "vaadin-grid": "^3.0.1",
-    "vaadin-combo-box": "^2.0.0",
+    "vaadin-combo-box": "master",
     "vaadin-button": "^1.0.0",
     "crud-view": "manolo/crud-view",
-    "vaadin-form-layout": "^1.0.0"
+    "vaadin-form-layout": "master",
+    "vaadin-themes": "master"
   },
   "devDependencies": {
     "web-component-tester": "Polymer/web-component-tester#^6.0.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  },
+  "resolutions": {
+    "vaadin-text-field": "master",
+    "vaadin-form-layout": "master"
   }
 }
