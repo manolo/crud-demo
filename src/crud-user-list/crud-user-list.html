@@ -17,37 +17,35 @@
 
     <iron-ajax auto url="/dummy/users.json" handle-as="json" last-response="{{items}}"></iron-ajax>
 
-    <crud-view desktop-view=[[desktopView]] filter-value="{{_filterValue}}"
-        item="[[_editableItem]]" button-text="New user"
+    <crud-view item="[[_editableItem]]"
         on-new-item="_newItem" on-closed="_onClose" on-before-close="_onBeforeClose">
 
       <vaadin-text-field slot="header" placeholder="Search ..." value="{{_filterValue}}"></vaadin-text-field>
       <vaadin-button slot="header" on-click="_newItem">New Item</vaadin-button>
 
       <vaadin-grid slot="grid" id="grid" items="[[_filterItems(items.*, _filterValue)]]" active-item="{{_activeItem}}">
-          <vaadin-grid-column width="270px" flex-grow="5">
-            <template class="header">
-              <vaadin-grid-sorter path="email">Email</vaadin-grid-sorter>
-            </template>
-            <template>
-              <div>
-                [[item.email]]
-              </div>
-            </template>
-          </vaadin-grid-column>
-          <vaadin-grid-column width="200px" flex-grow="5">
-            <template class="header">
-              <vaadin-grid-sorter path="name">Name</vaadin-grid-sorter>
-            </template>
-            <template>[[item.name]] [[item.last]]</template>
-          </vaadin-grid-column>
-          <vaadin-grid-column>
-            <template class="header">
-              <vaadin-grid-sorter path="role">Role</vaadin-grid-sorter>
-            </template>
-            <template>[[item.role]]</template>
-          </vaadin-grid-column>
-        <vaadin-grid-column-group>
+        <vaadin-grid-column width="270px" flex-grow="5">
+          <template class="header">
+            <vaadin-grid-sorter path="email">Email</vaadin-grid-sorter>
+          </template>
+          <template>
+            <div>
+              [[item.email]]
+            </div>
+          </template>
+        </vaadin-grid-column>
+        <vaadin-grid-column width="200px" flex-grow="5">
+          <template class="header">
+            <vaadin-grid-sorter path="name">Name</vaadin-grid-sorter>
+          </template>
+          <template>[[item.name]] [[item.last]]</template>
+        </vaadin-grid-column>
+        <vaadin-grid-column>
+          <template class="header">
+            <vaadin-grid-sorter path="role">Role</vaadin-grid-sorter>
+          </template>
+          <template>[[item.role]]</template>
+        </vaadin-grid-column>
       </vaadin-grid>
 
       <crud-user-editor slot="editor" id="editor"
@@ -64,7 +62,6 @@
 
       static get properties() {
         return {
-          desktopView: Boolean,
           _filterValue: String
         };
       }

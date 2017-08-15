@@ -17,10 +17,16 @@
         box-sizing: border-box;
         max-width: 800px;
       }
+      .buttons {
+        display: flex;
+      }
+      .fit {
+        flex: 1;
+      }
     </style>
 
     <h3>Edit User</h3>
-    <vaadin-form-layout style="flex: 1">
+    <vaadin-form-layout class="fit">
       <vaadin-text-field label="Email (login)" value="{{_editableItem.email}}" colspan="2"></vaadin-text-field>
       <br>
       <vaadin-text-field label="First Name" value="{{_editableItem.name}}"></vaadin-text-field>
@@ -30,10 +36,10 @@
       <br>
       <vaadin-combo-box label="Role" value="{{_editableItem.role}}" items='["Barista", "Admin", "Baker"]'></vaadin-combo-box>
     </vaadin-form-layout>
-    <div style="display: flex">
+    <div class="buttons">
       <vaadin-button on-click="save" disabled="[[!dirty]]">Save</vaadin-button>
       <vaadin-button on-click="cancel">Cancel</vaadin-button>
-      <span style="flex: 1"></span>
+      <span class="fit"></span>
       <vaadin-button on-click="delete">Delete</vaadin-button>
     </div>
   </template>
