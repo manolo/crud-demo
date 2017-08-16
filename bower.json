@@ -10,7 +10,8 @@
     "vaadin-button": "^1.0.0",
     "crud-view": "manolo/crud-view",
     "vaadin-form-layout": "master",
-    "vaadin-themes": "master"
+    "vaadin-themes": "master",
+    "iron-ajax": "^2.0.5"
   },
   "devDependencies": {
     "web-component-tester": "Polymer/web-component-tester#^6.0.0",
