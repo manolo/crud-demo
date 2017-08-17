@@ -1,461 +1,272 @@
 [
   {
-    "_id": "5995b982498805be67f77368",
-    "name": "Cantu",
-    "last": "Reilly",
-    "birthday": "1991-06-07",
-    "email": "cantureilly@phormula.com",
-    "password": "abc4293",
-    "role": "Baker"
+    "_id": "5999feff62bf2bb8ee356bfc",
+    "name": "Adriana",
+    "last": "Stevens",
+    "birthday": "1990-08-02",
+    "email": "adrianastevens@panzent.com",
+    "password": "Abc-8916",
+    "role": "admin"
   },
   {
-    "_id": "5995b982ae0393e78a5f6691",
-    "name": "Daniels",
-    "last": "Kelly",
-    "birthday": "1999-06-28",
-    "email": "danielskelly@phormula.com",
-    "password": "abc5991",
-    "role": "Barista"
+    "_id": "5999feffa8b6ff80d06fcb9a",
+    "name": "Irwin",
+    "last": "Waters",
+    "birthday": "1998-02-16",
+    "email": "irwinwaters@panzent.com",
+    "password": "Abc-7508",
+    "role": "admin"
   },
   {
-    "_id": "5995b982e66384fd2f1d3135",
-    "name": "Terrie",
-    "last": "Evans",
-    "birthday": "1990-07-04",
-    "email": "terrieevans@phormula.com",
-    "password": "abc9416",
-    "role": "Barista"
+    "_id": "5999feff9b0a020aa8dfe696",
+    "name": "Berry",
+    "last": "Schneider",
+    "birthday": "1999-11-01",
+    "email": "berryschneider@panzent.com",
+    "password": "Abc-2205",
+    "role": "operator"
   },
   {
-    "_id": "5995b9820fed68a7832c3f5b",
-    "name": "Decker",
-    "last": "Mayer",
-    "birthday": "1992-02-13",
-    "email": "deckermayer@phormula.com",
-    "password": "abc4728",
-    "role": "Admin"
+    "_id": "5999feffcb418f9fda6cc440",
+    "name": "Phoebe",
+    "last": "Randall",
+    "birthday": "1996-10-28",
+    "email": "phoeberandall@panzent.com",
+    "password": "Abc-3752",
+    "role": "user"
   },
   {
-    "_id": "5995b982f816ee4a94226162",
-    "name": "Carole",
-    "last": "James",
-    "birthday": "1994-12-12",
-    "email": "carolejames@phormula.com",
-    "password": "abc8245",
-    "role": "Barista"
+    "_id": "5999feff67b44a158d3028d3",
+    "name": "Juliet",
+    "last": "Rhodes",
+    "birthday": "1992-10-17",
+    "email": "julietrhodes@panzent.com",
+    "password": "Abc-4653",
+    "role": "operator"
   },
   {
-    "_id": "5995b98205c08060fada9ce3",
-    "name": "Whitney",
-    "last": "Perkins",
-    "birthday": "1994-09-20",
-    "email": "whitneyperkins@phormula.com",
-    "password": "abc1775",
-    "role": "Baker"
+    "_id": "5999feff103e80964f8aaf56",
+    "name": "Roman",
+    "last": "Reese",
+    "birthday": "1992-07-28",
+    "email": "romanreese@panzent.com",
+    "password": "Abc-9706",
+    "role": "operator"
   },
   {
-    "_id": "5995b982d307af19876ccb76",
-    "name": "Travis",
-    "last": "Blankenship",
-    "birthday": "1998-12-29",
-    "email": "travisblankenship@phormula.com",
-    "password": "abc4745",
-    "role": "Barista"
+    "_id": "5999feff09e480d0fbb7dd85",
+    "name": "May",
+    "last": "Gross",
+    "birthday": "1992-02-27",
+    "email": "maygross@panzent.com",
+    "password": "Abc-7432",
+    "role": "user"
   },
   {
-    "_id": "5995b982196980144ad60d1f",
-    "name": "Alisa",
-    "last": "Butler",
-    "birthday": "1996-03-16",
-    "email": "alisabutler@phormula.com",
-    "password": "abc3163",
-    "role": "Baker"
+    "_id": "5999feff7a5ac9bb35252c98",
+    "name": "Sondra",
+    "last": "Coffey",
+    "birthday": "1991-08-11",
+    "email": "sondracoffey@panzent.com",
+    "password": "Abc-2597",
+    "role": "admin"
   },
   {
-    "_id": "5995b982f4ae769cc7f4a82f",
-    "name": "Gordon",
-    "last": "Rosario",
-    "birthday": "1991-02-19",
-    "email": "gordonrosario@phormula.com",
-    "password": "abc3502",
-    "role": "Barista"
+    "_id": "5999feffe8e361261bb088e5",
+    "name": "Hayden",
+    "last": "Small",
+    "birthday": "1998-09-17",
+    "email": "haydensmall@panzent.com",
+    "password": "Abc-5251",
+    "role": "user"
   },
   {
-    "_id": "5995b982668c8d50ef8d3406",
-    "name": "Martinez",
-    "last": "Guerra",
-    "birthday": "1992-07-25",
-    "email": "martinezguerra@phormula.com",
-    "password": "abc3888",
-    "role": "Admin"
+    "_id": "5999feff3fa0b42293a3e523",
+    "name": "Rosales",
+    "last": "Bridges",
+    "birthday": "1995-02-14",
+    "email": "rosalesbridges@panzent.com",
+    "password": "Abc-6948",
+    "role": "operator"
   },
   {
-    "_id": "5995b9828fa9248ab7b63946",
-    "name": "Davis",
-    "last": "Strong",
-    "birthday": "1999-05-30",
-    "email": "davisstrong@phormula.com",
-    "password": "abc1076",
-    "role": "Baker"
+    "_id": "5999feff8a5da2a51a31d8ca",
+    "name": "Gabrielle",
+    "last": "Pittman",
+    "birthday": "1996-11-02",
+    "email": "gabriellepittman@panzent.com",
+    "password": "Abc-6669",
+    "role": "admin"
   },
   {
-    "_id": "5995b982fa356383e293d7a9",
-    "name": "Paige",
-    "last": "Ware",
-    "birthday": "1990-04-27",
-    "email": "paigeware@phormula.com",
-    "password": "abc3349",
-    "role": "Baker"
+    "_id": "5999feff8a2149c1ed4467fa",
+    "name": "Araceli",
+    "last": "Gill",
+    "birthday": "1998-06-21",
+    "email": "araceligill@panzent.com",
+    "password": "Abc-8327",
+    "role": "user"
   },
   {
-    "_id": "5995b98223c0c68e809e8af5",
-    "name": "Hurley",
-    "last": "Ruiz",
-    "birthday": "1990-11-13",
-    "email": "hurleyruiz@phormula.com",
-    "password": "abc2635",
-    "role": "Barista"
+    "_id": "5999feff1b2ec2053dffb065",
+    "name": "Bartlett",
+    "last": "Boyle",
+    "birthday": "1991-08-13",
+    "email": "bartlettboyle@panzent.com",
+    "password": "Abc-8083",
+    "role": "operator"
   },
   {
-    "_id": "5995b9828c5d22f207cc97c3",
-    "name": "Tania",
-    "last": "Ball",
-    "birthday": "1994-11-05",
-    "email": "taniaball@phormula.com",
-    "password": "abc6145",
-    "role": "Admin"
-  },
-  {
-    "_id": "5995b98229ef28e8cc614d65",
-    "name": "Lesa",
-    "last": "Goodwin",
-    "birthday": "1993-06-14",
-    "email": "lesagoodwin@phormula.com",
-    "password": "abc5978",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b98218ffd713417029a9",
-    "name": "Langley",
-    "last": "Kirk",
-    "birthday": "1997-08-24",
-    "email": "langleykirk@phormula.com",
-    "password": "abc9777",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b982f80ce48f1cb2157e",
-    "name": "Erika",
-    "last": "Carter",
-    "birthday": "1996-08-04",
-    "email": "erikacarter@phormula.com",
-    "password": "abc8077",
-    "role": "Admin"
-  },
-  {
-    "_id": "5995b982dd8ff7abc5f68680",
-    "name": "Morgan",
-    "last": "Fleming",
-    "birthday": "1990-10-04",
-    "email": "morganfleming@phormula.com",
-    "password": "abc9061",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b98200bcc9ce2b52105d",
-    "name": "Morales",
-    "last": "Lynn",
-    "birthday": "1990-02-14",
-    "email": "moraleslynn@phormula.com",
-    "password": "abc9700",
-    "role": "Admin"
-  },
-  {
-    "_id": "5995b98281f2d1e5d05c5dbf",
-    "name": "Marci",
-    "last": "Crosby",
-    "birthday": "1996-06-08",
-    "email": "marcicrosby@phormula.com",
-    "password": "abc3183",
-    "role": "Admin"
-  },
-  {
-    "_id": "5995b9821f2392467287c4d1",
-    "name": "Osborn",
-    "last": "Cherry",
-    "birthday": "1992-05-06",
-    "email": "osborncherry@phormula.com",
-    "password": "abc3939",
-    "role": "Baker"
-  },
-  {
-    "_id": "5995b98268f16fddd2605f23",
-    "name": "Bonita",
-    "last": "Myers",
-    "birthday": "1991-05-14",
-    "email": "bonitamyers@phormula.com",
-    "password": "abc1919",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b982873b56f83120940a",
-    "name": "Collins",
-    "last": "Keith",
-    "birthday": "1997-09-20",
-    "email": "collinskeith@phormula.com",
-    "password": "abc6712",
-    "role": "Admin"
-  },
-  {
-    "_id": "5995b982977f15711a4e0f4b",
-    "name": "Bell",
-    "last": "Mcconnell",
-    "birthday": "1994-06-11",
-    "email": "bellmcconnell@phormula.com",
-    "password": "abc9603",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b982ce6a9e498155b4da",
-    "name": "Marisol",
-    "last": "Carver",
-    "birthday": "1993-01-02",
-    "email": "marisolcarver@phormula.com",
-    "password": "abc5157",
-    "role": "Admin"
-  },
-  {
-    "_id": "5995b982493b3fd322358645",
-    "name": "Beth",
-    "last": "Cochran",
-    "birthday": "1995-02-02",
-    "email": "bethcochran@phormula.com",
-    "password": "abc5359",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b9828f2b9bff5aeb3b34",
-    "name": "Joy",
-    "last": "Holland",
-    "birthday": "1996-04-12",
-    "email": "joyholland@phormula.com",
-    "password": "abc3800",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b98215c6251f6a7fc336",
-    "name": "Curtis",
-    "last": "Bates",
-    "birthday": "1997-09-06",
-    "email": "curtisbates@phormula.com",
-    "password": "abc7346",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b98216984dd8148f2c48",
-    "name": "Shepard",
-    "last": "Arnold",
-    "birthday": "1996-12-17",
-    "email": "shepardarnold@phormula.com",
-    "password": "abc7540",
-    "role": "Admin"
-  },
-  {
-    "_id": "5995b982dd73473fff535aba",
-    "name": "Delacruz",
-    "last": "Nieves",
-    "birthday": "1998-02-23",
-    "email": "delacruznieves@phormula.com",
-    "password": "abc7764",
-    "role": "Admin"
-  },
-  {
-    "_id": "5995b982ff523ed85f4d2385",
-    "name": "Rosa",
-    "last": "Blake",
-    "birthday": "1991-09-08",
-    "email": "rosablake@phormula.com",
-    "password": "abc8923",
-    "role": "Baker"
-  },
-  {
-    "_id": "5995b982b7ee0e2d0601f755",
-    "name": "Wooten",
-    "last": "Ewing",
-    "birthday": "1991-06-01",
-    "email": "wootenewing@phormula.com",
-    "password": "abc4979",
-    "role": "Baker"
-  },
-  {
-    "_id": "5995b98270c65e6235f67476",
-    "name": "Gay",
-    "last": "Donaldson",
-    "birthday": "1994-04-23",
-    "email": "gaydonaldson@phormula.com",
-    "password": "abc6018",
-    "role": "Admin"
-  },
-  {
-    "_id": "5995b982bb7eec5d0b33c31a",
-    "name": "Hillary",
-    "last": "Clarke",
-    "birthday": "1997-11-04",
-    "email": "hillaryclarke@phormula.com",
-    "password": "abc3348",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b9823d8c69c5c22a317e",
-    "name": "Sylvia",
-    "last": "Downs",
-    "birthday": "1992-02-09",
-    "email": "sylviadowns@phormula.com",
-    "password": "abc3769",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b982523f5dc841e4a6d5",
-    "name": "Dillon",
-    "last": "Boyd",
-    "birthday": "1991-09-28",
-    "email": "dillonboyd@phormula.com",
-    "password": "abc6585",
-    "role": "Baker"
-  },
-  {
-    "_id": "5995b982e21e5fbf04c64e83",
-    "name": "Amanda",
-    "last": "Cantu",
-    "birthday": "1992-01-25",
-    "email": "amandacantu@phormula.com",
-    "password": "abc6332",
-    "role": "Barista"
-  },
-  {
-    "_id": "5995b98224f3b11068265670",
+    "_id": "5999feff64fc59c2cdab6020",
     "name": "Olive",
-    "last": "Garrett",
-    "birthday": "1994-11-14",
-    "email": "olivegarrett@phormula.com",
-    "password": "abc6964",
-    "role": "Barista"
+    "last": "Kinney",
+    "birthday": "1991-01-17",
+    "email": "olivekinney@panzent.com",
+    "password": "Abc-4423",
+    "role": "admin"
   },
   {
-    "_id": "5995b982b44eb3a6dfe46a9f",
-    "name": "Kristie",
-    "last": "Short",
-    "birthday": "1999-01-29",
-    "email": "kristieshort@phormula.com",
-    "password": "abc7046",
-    "role": "Barista"
+    "_id": "5999feff5334802495ce572d",
+    "name": "Gentry",
+    "last": "Mcknight",
+    "birthday": "1992-09-26",
+    "email": "gentrymcknight@panzent.com",
+    "password": "Abc-7953",
+    "role": "admin"
   },
   {
-    "_id": "5995b98283e0fed8bcd6d1bc",
-    "name": "Hoffman",
-    "last": "Weber",
-    "birthday": "1998-04-11",
-    "email": "hoffmanweber@phormula.com",
-    "password": "abc8114",
-    "role": "Admin"
+    "_id": "5999feff8bf9d0339cb65911",
+    "name": "Corine",
+    "last": "Berg",
+    "birthday": "1997-08-30",
+    "email": "corineberg@panzent.com",
+    "password": "Abc-2771",
+    "role": "admin"
   },
   {
-    "_id": "5995b9828cc307c5075e2151",
-    "name": "Anthony",
-    "last": "Bowman",
-    "birthday": "1993-12-11",
-    "email": "anthonybowman@phormula.com",
-    "password": "abc4774",
-    "role": "Admin"
+    "_id": "5999feffb13a21d082c313f9",
+    "name": "Carissa",
+    "last": "Cash",
+    "birthday": "1993-04-18",
+    "email": "carissacash@panzent.com",
+    "password": "Abc-1009",
+    "role": "user"
   },
   {
-    "_id": "5995b98205ae79c49a8fc8e2",
-    "name": "Lana",
-    "last": "Wolf",
-    "birthday": "1996-04-09",
-    "email": "lanawolf@phormula.com",
-    "password": "abc4641",
-    "role": "Admin"
+    "_id": "5999feffdacd641c10f6cf23",
+    "name": "Lenore",
+    "last": "Curtis",
+    "birthday": "1994-10-09",
+    "email": "lenorecurtis@panzent.com",
+    "password": "Abc-5410",
+    "role": "operator"
   },
   {
-    "_id": "5995b9821b68574caf1b619e",
-    "name": "Sawyer",
-    "last": "Randolph",
-    "birthday": "1997-08-06",
-    "email": "sawyerrandolph@phormula.com",
-    "password": "abc5243",
-    "role": "Baker"
+    "_id": "5999feffd8172c07878e8ff6",
+    "name": "Violet",
+    "last": "Moore",
+    "birthday": "1998-11-16",
+    "email": "violetmoore@panzent.com",
+    "password": "Abc-1994",
+    "role": "admin"
   },
   {
-    "_id": "5995b982e3bdc3ea1caf32d5",
-    "name": "Martin",
-    "last": "Bender",
-    "birthday": "1992-08-08",
-    "email": "martinbender@phormula.com",
-    "password": "abc8463",
-    "role": "Baker"
+    "_id": "5999feffc30504b4fd8b9736",
+    "name": "Deidre",
+    "last": "Ray",
+    "birthday": "1999-12-12",
+    "email": "deidreray@panzent.com",
+    "password": "Abc-5826",
+    "role": "user"
   },
   {
-    "_id": "5995b98209309911908a3e14",
-    "name": "Mckenzie",
-    "last": "Kramer",
-    "birthday": "1991-02-06",
-    "email": "mckenziekramer@phormula.com",
-    "password": "abc4581",
-    "role": "Baker"
+    "_id": "5999feff92e5722119cce9e1",
+    "name": "Madelyn",
+    "last": "Vasquez",
+    "birthday": "1998-04-24",
+    "email": "madelynvasquez@panzent.com",
+    "password": "Abc-8056",
+    "role": "operator"
   },
   {
-    "_id": "5995b982de2f9be7069da2ff",
-    "name": "Pitts",
-    "last": "Marquez",
-    "birthday": "1996-12-21",
-    "email": "pittsmarquez@phormula.com",
-    "password": "abc7878",
-    "role": "Admin"
+    "_id": "5999feff7a617062f8515164",
+    "name": "Marta",
+    "last": "Haley",
+    "birthday": "1990-02-20",
+    "email": "martahaley@panzent.com",
+    "password": "Abc-4815",
+    "role": "operator"
   },
   {
-    "_id": "5995b9828aeaf929f6c94777",
-    "name": "Vargas",
-    "last": "Tate",
-    "birthday": "1996-12-28",
-    "email": "vargastate@phormula.com",
-    "password": "abc3162",
-    "role": "Barista"
+    "_id": "5999feffa149a6a0a6297c68",
+    "name": "Iris",
+    "last": "Mccullough",
+    "birthday": "1990-01-12",
+    "email": "irismccullough@panzent.com",
+    "password": "Abc-4739",
+    "role": "operator"
   },
   {
-    "_id": "5995b982f183d30367a11ca7",
-    "name": "Annette",
-    "last": "Bray",
-    "birthday": "1993-05-15",
-    "email": "annettebray@phormula.com",
-    "password": "abc7579",
-    "role": "Admin"
+    "_id": "5999feff1f34be9252249c25",
+    "name": "Reeves",
+    "last": "Underwood",
+    "birthday": "1991-07-19",
+    "email": "reevesunderwood@panzent.com",
+    "password": "Abc-8928",
+    "role": "operator"
   },
   {
-    "_id": "5995b9822b4a7b9ecd7c3913",
-    "name": "Joanna",
-    "last": "Larson",
-    "birthday": "1991-02-16",
-    "email": "joannalarson@phormula.com",
-    "password": "abc9186",
-    "role": "Barista"
+    "_id": "5999feff11f872fc5fb377e8",
+    "name": "Rhodes",
+    "last": "Stafford",
+    "birthday": "1992-03-11",
+    "email": "rhodesstafford@panzent.com",
+    "password": "Abc-5814",
+    "role": "user"
   },
   {
-    "_id": "5995b982396fb48cb8efec63",
-    "name": "Kitty",
-    "last": "Phelps",
-    "birthday": "1997-03-04",
-    "email": "kittyphelps@phormula.com",
-    "password": "abc9578",
-    "role": "Baker"
+    "_id": "5999feff701b5d0d2115a508",
+    "name": "Muriel",
+    "last": "Fuentes",
+    "birthday": "1997-12-16",
+    "email": "murielfuentes@panzent.com",
+    "password": "Abc-7567",
+    "role": "operator"
   },
   {
-    "_id": "5995b9828c15a187cfa7c323",
-    "name": "Sheri",
-    "last": "Holder",
-    "birthday": "1998-08-27",
-    "email": "sheriholder@phormula.com",
-    "password": "abc5098",
-    "role": "Admin"
+    "_id": "5999feffa2451bd599ec925e",
+    "name": "Key",
+    "last": "Summers",
+    "birthday": "1993-11-13",
+    "email": "keysummers@panzent.com",
+    "password": "Abc-3576",
+    "role": "operator"
+  },
+  {
+    "_id": "5999feffccbf96ebd6e39b40",
+    "name": "Judy",
+    "last": "Reynolds",
+    "birthday": "1991-04-03",
+    "email": "judyreynolds@panzent.com",
+    "password": "Abc-8390",
+    "role": "user"
+  },
+  {
+    "_id": "5999feff54388a7607c6034d",
+    "name": "Tania",
+    "last": "Bell",
+    "birthday": "1992-01-01",
+    "email": "taniabell@panzent.com",
+    "password": "Abc-6922",
+    "role": "operator"
+  },
+  {
+    "_id": "5999feff5e15aaca5d846d06",
+    "name": "Anastasia",
+    "last": "Vargas",
+    "birthday": "1996-08-17",
+    "email": "anastasiavargas@panzent.com",
+    "password": "Abc-5018",
+    "role": "user"
   }
 ]
