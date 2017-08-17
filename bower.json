@@ -11,7 +11,8 @@
     "crud-view": "manolo/crud-view",
     "vaadin-form-layout": "master",
     "vaadin-themes": "master",
-    "iron-ajax": "^2.0.5"
+    "iron-ajax": "^2.0.5",
+    "vaadin-date-picker": "master"
   },
   "devDependencies": {
     "web-component-tester": "Polymer/web-component-tester#^6.0.0",

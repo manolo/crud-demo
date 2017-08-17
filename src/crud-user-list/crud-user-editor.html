@@ -3,6 +3,7 @@
 <link rel="import" href="../../bower_components/vaadin-text-field/vaadin-password-field.html">
 <link rel="import" href="../../bower_components/vaadin-button/vaadin-button.html">
 <link rel="import" href="../../bower_components/vaadin-form-layout/vaadin-form-layout.html">
+<link rel="import" href="../../bower_components/vaadin-date-picker/vaadin-date-picker.html">
 <link rel="import" href="../../bower_components/vaadin-combo-box/vaadin-combo-box.html">
 <link rel="import" href="../../bower_components/crud-view/crud-item-mixin.html">
 
@@ -29,12 +30,13 @@
     <vaadin-form-layout class="fit">
       <vaadin-text-field label="Email (login)" value="{{_editableItem.email}}" colspan="2"></vaadin-text-field>
       <br>
+      <vaadin-password-field label="Password" value="{{_editableItem.password}}" colspan="2"></vaadin-password-field>
+      <br>
       <vaadin-text-field label="First Name" value="{{_editableItem.name}}"></vaadin-text-field>
       <vaadin-text-field label="Last Name" value="{{_editableItem.last}}"></vaadin-text-field>
       <br>
-      <vaadin-password-field label="Password" value="{{_editableItem.password}}" colspan="2"></vaadin-password-field>
-      <br>
       <vaadin-combo-box label="Role" value="{{_editableItem.role}}" items='["Barista", "Admin", "Baker"]'></vaadin-combo-box>
+      <vaadin-date-picker label="Birthday" value="{{_editableItem.birthday}}"></vaadin-date-picker>
     </vaadin-form-layout>
     <div class="buttons">
       <vaadin-button on-click="save" disabled="[[!dirty]]">Save</vaadin-button>
@@ -49,6 +51,7 @@
       static get is() {
         return 'crud-user-editor';
       }
+
     }
 
     window.customElements.define(CrudUserEditor.is, CrudUserEditor);
