@@ -7,6 +7,7 @@
 <link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../../bower_components/crud-view/crud-list-mixin.html">
 <link rel="import" href="../../bower_components/crud-view/crud-view.html">
+<link rel="import" href="../../bower_components/vaadin-pouchdb/vaadin-pouchdb.html">
 
 <link rel="import" href="crud-user-editor.html">
 
@@ -15,7 +16,8 @@
     <style>
     </style>
 
-    <iron-ajax auto url="/dummy/users.json" handle-as="json" last-response="{{items}}"></iron-ajax>
+    <!-- <iron-ajax auto url="/dummy/users.json" handle-as="json" last-response="{{items}}"></iron-ajax> -->
+    <vaadin-pouchdb id="db" dbname="crud-demo" data="{{items}}"></vaadin-pouchdb>
 
     <crud-view item="[[_editableItem]]"
         on-new-item="_newItem" on-closed="_onClose" on-before-close="_onBeforeClose">
@@ -61,7 +63,6 @@
       }
 
     }
-
 
     window.customElements.define(CrudUserList.is, CrudUserList);
   </script>

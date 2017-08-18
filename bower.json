@@ -12,7 +12,8 @@
     "vaadin-form-layout": "master",
     "vaadin-themes": "master",
     "iron-ajax": "^2.0.5",
-    "vaadin-date-picker": "master"
+    "vaadin-date-picker": "master",
+    "vaadin-pouchdb": "manolo/vaadin-pouchdb#master"
   },
   "devDependencies": {
     "web-component-tester": "Polymer/web-component-tester#^6.0.0",
