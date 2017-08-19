@@ -13,14 +13,6 @@
 
 <dom-module id="crud-user-list">
   <template>
-    <style>
-      .bar {
-        display: flex;
-      }
-      .fit {
-        flex: 1;
-      }
-    </style>
 
     <!-- <iron-ajax auto url="/dummy/users.json" handle-as="json" last-response="{{items}}"></iron-ajax> -->
     <vaadin-pouchdb id="db" dbname="crud-demo" data="{{items}}"
@@ -29,10 +21,8 @@
 
     <crud-view editing="[[editing]]" on-closed="close">
 
-      <div class="bar" slot="header">
-        <vaadin-text-field class="fit" placeholder="Search ..." value="{{_filterValue}}"></vaadin-text-field>
-        <vaadin-button on-click="_newItem">New Item</vaadin-button>
-      </div>
+      <vaadin-text-field slot="header" placeholder="Search ..." value="{{search}}" style="flex: 1"></vaadin-text-field>
+      <vaadin-button slot="header" on-click="new">New Item</vaadin-button>
 
       <vaadin-grid slot="grid" id="grid" items="[[filter(items, search, items.*)]]" active-item="{{activeItem}}">
         <vaadin-grid-column width="270px">
