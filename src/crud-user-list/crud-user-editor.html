@@ -9,7 +9,7 @@
 
 <dom-module id="crud-user-editor">
   <template>
-    <style include="shared-styles">
+    <style>
       :host {
         display: flex;
         flex-direction: column;
@@ -26,23 +26,24 @@
       }
     </style>
 
-    <h3>Edit User</h3>
+    <h3>User Editor</h3>
     <vaadin-form-layout class="fit">
-      <vaadin-text-field label="Email (login)" value="{{_editableItem.email}}" colspan="2"></vaadin-text-field>
+      <vaadin-text-field label="Email (login)" value="{{item.email}}" colspan="2"></vaadin-text-field>
       <br>
-      <vaadin-password-field label="Password" value="{{_editableItem.password}}" colspan="2"></vaadin-password-field>
+      <vaadin-password-field label="Password" value="{{item.password}}" colspan="2"></vaadin-password-field>
       <br>
-      <vaadin-text-field label="First Name" value="{{_editableItem.name}}"></vaadin-text-field>
-      <vaadin-text-field label="Last Name" value="{{_editableItem.last}}"></vaadin-text-field>
+      <vaadin-text-field label="First Name" value="{{item.name}}"></vaadin-text-field>
+      <vaadin-text-field label="Last Name" value="{{item.last}}"></vaadin-text-field>
       <br>
-      <vaadin-combo-box label="Role" value="{{_editableItem.role}}" items='["Barista", "Admin", "Baker"]'></vaadin-combo-box>
-      <vaadin-date-picker label="Birthday" value="{{_editableItem.birthday}}"></vaadin-date-picker>
+      <vaadin-combo-box label="Role" value="{{item.role}}" items='["Barista", "Admin", "Baker"]'></vaadin-combo-box>
+      <vaadin-date-picker label="Birthday" value="{{item.birthday}}"></vaadin-date-picker>
     </vaadin-form-layout>
+
     <div class="buttons">
       <vaadin-button on-click="save" disabled="[[!dirty]]">Save</vaadin-button>
       <vaadin-button on-click="cancel">Cancel</vaadin-button>
       <span class="fit"></span>
-      <vaadin-button on-click="delete">Delete</vaadin-button>
+      <vaadin-button on-click="delete" disabled="[[new]]">Delete</vaadin-button>
     </div>
   </template>
 
@@ -51,7 +52,6 @@
       static get is() {
         return 'crud-user-editor';
       }
-
     }
 
     window.customElements.define(CrudUserEditor.is, CrudUserEditor);

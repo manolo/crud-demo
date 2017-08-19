@@ -8,7 +8,7 @@
     "vaadin-grid": "^3.0.1",
     "vaadin-combo-box": "master",
     "vaadin-button": "^1.0.0",
-    "crud-view": "manolo/crud-view",
+    "crud-view": "manolo/crud-view#master",
     "vaadin-form-layout": "master",
     "vaadin-themes": "master",
     "iron-ajax": "^2.0.5",
