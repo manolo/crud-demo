@@ -23,7 +23,9 @@
     </style>
 
     <!-- <iron-ajax auto url="/dummy/users.json" handle-as="json" last-response="{{items}}"></iron-ajax> -->
-    <vaadin-pouchdb id="db" dbname="crud-demo" data="{{items}}"></vaadin-pouchdb>
+    <vaadin-pouchdb id="db" dbname="crud-demo" data="{{items}}"
+      remote="https://manolo.cloudant.com/demo"
+      ></vaadin-pouchdb>
 
     <crud-view item="[[_editableItem]]"
         on-new-item="_newItem" on-closed="_onClose" on-before-close="_onBeforeClose">
