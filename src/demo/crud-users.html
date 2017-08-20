@@ -4,12 +4,17 @@
 <link rel="import" href="../../bower_components/crud-view/crud-list-mixin.html">
 <link rel="import" href="../../bower_components/crud-view/crud-view.html">
 <link rel="import" href="crud-user.html">
+<link rel="import" href="../../bower_components/vaadin-button/vaadin-button.html">
+<link rel="import" href="../../bower_components/vaadin-text-field/vaadin-text-field.html">
 
 <dom-module id="crud-users">
   <template>
     <iron-ajax auto url="/dummy/users.json" handle-as="json" last-response="{{items}}"></iron-ajax>
     <crud-view editing="[[editing]]" on-close="close">
-      <input value="{{search::input}}" slot="header"></input> <button slot="header" on-click="new">New Item</button>
+      <div slot="header" style="width: 100%; display: flex">
+        <vaadin-text-field placeholder="Search ..." value="{{search}}" style="flex: 1"></vaadin-text-field>
+        <vaadin-button on-click="new">New</vaadin-button>
+      </div>
       <vaadin-grid id="grid" slot="grid" items="[[filter(items, search, items.*)]]" active-item="{{activeItem}}">
         <vaadin-grid-column>
           <template>[[item.email]]</template>

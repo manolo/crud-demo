@@ -1,15 +1,47 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../../bower_components/crud-view/crud-item-mixin.html">
+<link rel="import" href="../../bower_components/vaadin-text-field/vaadin-text-field.html">
+<link rel="import" href="../../bower_components/vaadin-text-field/vaadin-password-field.html">
+<link rel="import" href="../../bower_components/vaadin-button/vaadin-button.html">
+<link rel="import" href="../../bower_components/vaadin-form-layout/vaadin-form-layout.html">
+<link rel="import" href="../../bower_components/vaadin-combo-box/vaadin-combo-box.html">
+<link rel="import" href="../../bower_components/vaadin-date-picker/vaadin-date-picker.html">
 
 <dom-module id="crud-user">
   <template>
-    Email: <input value="{{item.email::input}}"></input>
-    First: <input value="{{item.name::input}}"></input>
-    Last:  <input value="{{item.last::input}}"></input>
+    <style>
+      :host {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 800px;
+      }
+      vaadin-form-layout {
+        flex: 1;
+      }
+      .buttons {
+        display: flex;
+      }
+    </style>
+    <vaadin-form-layout style="padding: 10px">
+      <vaadin-text-field colspan="2" label="Login" value="{{item.email}}" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></vaadin-text-field>
+      <br>
+      <vaadin-password-field colspan="2" label="Password" value="{{item.password}}" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"></vaadin-password-field>
+      <br>
+      <vaadin-text-field label="Name" value="{{item.name}}" required pattern=".{3,}"></vaadin-text-field>
+      <vaadin-text-field label="Surname" value="{{item.last}}"></vaadin-text-field>
+      <br>
+      <vaadin-combo-box label="Role" value="{{item.role}}" items='["Barista","Admin","Baker"]' required></vaadin-combo-box>
+      <vaadin-date-picker label="Birthday" value="{{item.birthday}}"></vaadin-date-picker>
+    </vaadin-form-layout>
+
     <br>
-    <button on-click="save" disabled="[[!dirty]]">Save</button>
-    <button on-click="cancel">Cancel</button>
-    <button on-click="delete" disabled="[[new]]">Delete</button>
+    <div class="buttons">
+      <vaadin-button on-click="save" theme="primary" disabled="[[!dirty]]">Save</vaadin-button>
+      <vaadin-button on-click="cancel">Cancel</vaadin-button>
+      <span style="flex: 1"></span>
+      <vaadin-button on-click="delete" theme="danger" disabled="[[new]]">Delete</vaadin-button>
+    </div>
   </template>
 
   <script>
