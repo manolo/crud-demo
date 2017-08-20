@@ -22,7 +22,7 @@
     <crud-view editing="[[editing]]" on-closed="close">
 
       <vaadin-text-field slot="header" placeholder="Search ..." value="{{search}}" style="flex: 1"></vaadin-text-field>
-      <vaadin-button slot="header" on-click="new">New Item</vaadin-button>
+      <vaadin-button slot="header" on-click="new" theme="primary">New Item</vaadin-button>
 
       <vaadin-grid slot="grid" id="grid" items="[[filter(items, search, items.*)]]" active-item="{{activeItem}}">
         <vaadin-grid-column width="270px">
