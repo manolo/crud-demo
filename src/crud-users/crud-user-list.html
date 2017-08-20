@@ -22,16 +22,16 @@
     <crud-view editing="[[editing]]" on-closed="close">
 
       <vaadin-text-field slot="header" placeholder="Search ..." value="{{search}}" style="flex: 1"></vaadin-text-field>
-      <vaadin-button slot="header" on-click="new">New Item</vaadin-button>
+      <vaadin-button slot="header" on-click="new" theme="primary">New Item</vaadin-button>
 
       <vaadin-grid slot="grid" id="grid" items="[[filter(items, search, items.*)]]" active-item="{{activeItem}}">
-        <vaadin-grid-column width="270px" flex-grow="5">
+        <vaadin-grid-column width="270px">
           <template class="header">
             <vaadin-grid-sorter path="email">Email</vaadin-grid-sorter>
           </template>
           <template>[[item.email]]</template>
         </vaadin-grid-column>
-        <vaadin-grid-column width="200px" flex-grow="5">
+        <vaadin-grid-column width="200px">
           <template class="header">
             <vaadin-grid-sorter path="name">Name</vaadin-grid-sorter>
           </template>
