@@ -1,0 +1,35 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/vaadin-grid/vaadin-grid.html">
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../../bower_components/crud-view/crud-list-mixin.html">
+<link rel="import" href="../../bower_components/crud-view/crud-view.html">
+<link rel="import" href="crud-user.html">
+
+<dom-module id="crud-users">
+  <template>
+    <iron-ajax auto url="/dummy/users.json" handle-as="json" last-response="{{items}}"></iron-ajax>
+    <crud-view editing="[[editing]]" on-close="close">
+      <input value="{{search::input}}" slot="header"></input> <button slot="header" on-click="new">New Item</button>
+      <vaadin-grid id="grid" slot="grid" items="[[filter(items, search, items.*)]]" active-item="{{activeItem}}">
+        <vaadin-grid-column>
+          <template>[[item.email]]</template>
+        </vaadin-grid-column>
+        <vaadin-grid-column>
+          <template>[[item.name]] [[item.last]]</template>
+        </vaadin-grid-column>
+      </vaadin-grid>
+      <br>
+      <crud-user id="editor" slot="editor" item="[[item]]" on-save="save" on-delete="delete" on-close="close"></crud-user>
+    </crud-view>
+
+  </template>
+
+  <script>
+    class CrudUsers extends window.CrudListMixin(Polymer.Element) {
+      static get is() {
+        return 'crud-users';
+      }
+    }
+    window.customElements.define(CrudUsers.is, CrudUsers);
+  </script>
+</dom-module>

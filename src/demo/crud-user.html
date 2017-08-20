@@ -1,0 +1,23 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/crud-view/crud-item-mixin.html">
+
+<dom-module id="crud-user">
+  <template>
+    Email: <input value="{{item.email::input}}"></input>
+    First: <input value="{{item.name::input}}"></input>
+    Last:  <input value="{{item.last::input}}"></input>
+    <br>
+    <button on-click="save" disabled="[[!dirty]]">Save</button>
+    <button on-click="cancel">Cancel</button>
+    <button on-click="delete" disabled="[[new]]">Delete</button>
+  </template>
+
+  <script>
+    class CrudUser extends window.CrudItemMixin(Polymer.Element) {
+      static get is() {
+        return 'crud-user';
+      }
+    }
+    window.customElements.define(CrudUser.is, CrudUser);
+  </script>
+</dom-module>
