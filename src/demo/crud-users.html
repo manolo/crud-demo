@@ -1,5 +1,6 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../../bower_components/vaadin-grid/vaadin-grid.html">
+<link rel="import" href="../../bower_components/vaadin-grid/vaadin-grid-sorter.html">
 <link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../../bower_components/crud-view/crud-list-mixin.html">
 <link rel="import" href="../../bower_components/crud-view/crud-view.html">
@@ -17,6 +18,9 @@
       </div>
       <vaadin-grid id="grid" slot="grid" items="[[filter(items, search, items.*)]]" active-item="{{activeItem}}">
         <vaadin-grid-column>
+          <template class="header">
+            <vaadin-grid-sorter path="email">Email</vaadin-grid-sorter>
+          </template>
           <template>[[item.email]]</template>
         </vaadin-grid-column>
         <vaadin-grid-column>
