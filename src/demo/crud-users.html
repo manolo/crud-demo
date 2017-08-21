@@ -1,0 +1,44 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/vaadin-grid/vaadin-grid.html">
+<link rel="import" href="../../bower_components/vaadin-grid/vaadin-grid-sorter.html">
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../../bower_components/crud-view/crud-list-mixin.html">
+<link rel="import" href="../../bower_components/crud-view/crud-view.html">
+<link rel="import" href="crud-user.html">
+<link rel="import" href="../../bower_components/vaadin-button/vaadin-button.html">
+<link rel="import" href="../../bower_components/vaadin-text-field/vaadin-text-field.html">
+
+<dom-module id="crud-users">
+  <template>
+    <iron-ajax auto="" url="users.json" handle-as="json" last-response="{{items}}"></iron-ajax>
+    <crud-view editing="[[editing]]" on-close="close">
+      <div slot="header" style="width: 100%; display: flex">
+        <vaadin-text-field placeholder="Search ..." value="{{search}}" style="flex: 1"></vaadin-text-field>
+        <vaadin-button on-click="new">New</vaadin-button>
+      </div>
+      <vaadin-grid id="grid" slot="grid" items="[[filter(items, search, items.*)]]" active-item="{{activeItem}}">
+        <vaadin-grid-column>
+          <template class="header">
+            <vaadin-grid-sorter path="email">Email</vaadin-grid-sorter>
+          </template>
+          <template>[[item.email]]</template>
+        </vaadin-grid-column>
+        <vaadin-grid-column>
+          <template>[[item.name]] [[item.last]]</template>
+        </vaadin-grid-column>
+      </vaadin-grid>
+      <br>
+      <crud-user id="editor" slot="editor" item="[[item]]" on-save="save" on-delete="delete" on-close="close"></crud-user>
+    </crud-view>
+
+  </template>
+
+  <script>
+    class CrudUsers extends window.CrudListMixin(Polymer.Element) {
+      static get is() {
+        return 'crud-users';
+      }
+    }
+    window.customElements.define(CrudUsers.is, CrudUsers);
+  </script>
+</dom-module>
