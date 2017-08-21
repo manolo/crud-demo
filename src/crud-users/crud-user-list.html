@@ -19,7 +19,7 @@
       remote="https://manolo.cloudant.com/demo"
       ></vaadin-pouchdb>
 
-    <crud-view editing="[[editing]]" on-closed="close">
+    <crud-view editing="[[editing]]" on-closed="close" style="padding: 8px; box-sizing: border-box;">
 
       <vaadin-text-field slot="header" placeholder="Search ..." value="{{search}}" style="flex: 1"></vaadin-text-field>
       <vaadin-button slot="header" on-click="new" theme="primary">New Item</vaadin-button>
