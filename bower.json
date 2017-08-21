@@ -4,7 +4,7 @@
   "main": "index.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",
-    "vaadin-text-field": "master",
+    "vaadin-text-field": "#fix/has-value",
     "vaadin-grid": "^3.0.1",
     "vaadin-combo-box": "master",
     "vaadin-button": "^1.0.0",
@@ -20,7 +20,7 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
   },
   "resolutions": {
-    "vaadin-text-field": "master",
+    "vaadin-text-field": "fix/has-value",
     "vaadin-form-layout": "master"
   }
 }
