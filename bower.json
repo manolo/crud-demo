@@ -4,23 +4,21 @@
   "main": "index.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",
-    "vaadin-text-field": "#fix/has-value",
-    "vaadin-grid": "^3.0.1",
-    "vaadin-combo-box": "master",
-    "vaadin-button": "^1.0.0",
     "crud-view": "manolo/crud-view#master",
-    "vaadin-form-layout": "master",
-    "vaadin-themes": "master",
     "iron-ajax": "^2.0.5",
-    "vaadin-date-picker": "master",
-    "vaadin-pouchdb": "manolo/vaadin-pouchdb#master"
-  },
-  "devDependencies": {
-    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+    "vaadin-pouchdb": "manolo/vaadin-pouchdb#master",
+    "vaadin-grid": "^4.0.0",
+    "vaadin-text-field": "^1.1.0",
+    "vaadin-combo-box": "^3.0.1",
+    "vaadin-date-picker": "^2.0.7",
+    "vaadin-form-layout": "^1.0.4",
+    "vaadin-valo-theme": "master"
   },
   "resolutions": {
-    "vaadin-text-field": "fix/has-value",
-    "vaadin-form-layout": "master"
+    "vaadin-combo-box": "^3.0.1",
+    "vaadin-form-layout": "^1.0.4",
+    "vaadin-date-picker": "^2.0.7",
+    "vaadin-grid": "^4.0.0",
+    "vaadin-overlay": "master"
   }
 }
